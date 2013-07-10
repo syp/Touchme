@@ -28,7 +28,11 @@ public class Dots {
     }
 
     public Dot getLastDot(){
-        return dots.getLast();
+        if(dots.isEmpty()){
+            return null;
+        }else{
+            return dots.getLast();
+        }
     }
 
     public List<Dot> getSafeDots(){
